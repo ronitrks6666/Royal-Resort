@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        @media screen and (max-width: 981px) {
+
+
+            .brand-name {
+                font-size: 2.9vh;
+                font-weight: bold;
+
+                padding: 0vw 1vw;
+            }
+
+            .nav-brand {
+                margin-top: 2vw;
+            }
+
+            .item-nav {
+                /* margin-left:auto; */
+                font-size: 2.4vh;
+
+            }
+
+            .nav-link {
+                padding-bottom: 0%;
+                margin-right: 0.5vw;
+                border-bottom: 3px rgba(0, 0, 0, 0) solid;
+                width: max-content;
+            }
+
+            .nav-link:hover {
+                border-bottom: red 3px solid;
+                width: max-content;
+            }
+
+            .c-caption {
+                font-family: 'Lobster', cursive;
+                margin: auto;
+                font-family: 'Source Serif Pro', serif;
+                z-index: 100;
+                margin-bottom: 2.5%;
+                margin-top: auto;
+                font-size: 2.4vw;
+                background-color: rgba(10, 10, 10, 0.527);
+                width: 40%;
+                font-weight: 400;
+            }
+            .c-pic {
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        @media screen and (max-width : 760px) {
+
+            .nav-container {
+                height: 300px;
+                width: 100%;
+                border: 1px black solid
+            }
+            
+
+            .c-upper {
+                height: 100%;
+            }
+
+
+            .c-inner {
+                height: 100%;
+            }
+
+            .c-pic {
+                width: 100%;
+                height: 300px;
+            }
+
+            .c-caption {
+                font-family: 'Lobster', cursive;
+                margin: auto;
+                font-family: 'Source Serif Pro', serif;
+                z-index: 100;
+                margin-bottom: 8%;
+                margin-top: auto;
+                font-size: 2.9vw;
+                background-color: rgba(10, 10, 10, 0.527);
+                width: 60%;
+                font-weight: 400;
+            }
+
+            .partial-border {
+
+                flex: 0 0;
+                width: 80%;
+                background: lightgray;
+                padding: 25px;
+
+                background:
+                    linear-gradient(#ED1C16, #ED1C16) bottom left / 100px 1px,
+                    linear-gradient(#ED1C16, #ED1C16) bottom left / 1px 70px,
+                    linear-gradient(#ED1C16, #ED1C16) top right / 100px 1px,
+                    linear-gradient(#ED1C16, #ED1C16) top right / 1px 70px;
+                background-repeat: no-repeat;
+            }
+
+
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="nav-container">
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top navigation">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse nav-brand " id="navbarTogglerDemo01">
+                    <a class="navbar-brand  brand-name" style="color: #fff;" href="#">ROYAL RESORT</a>
+                    <ul class="navbar-nav me-auto mb-2 ms-auto mb-lg-0 item-nav ">
+                        <li class="nav-item">
+                            <a class="nav-link active" style="color: white;" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="#">Catering</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: white;" href="#">About Us</a>
+                        </li>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <div id="carouselExampleFade" class="carousel slide carousel-fadez c-upper" data-bs-ride="carousel">
+
+
+            <div class="carousel-inner c-inner">
+                <div class="carousel-caption  d-md-block c-caption">
+
+
+
+                    <div class="centering">
+                        <div class="partial-border ">
+                            WE MAKE EVENTS
+
+                            MEMORABLE
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item active">
+                    <div class="nav">
+
+                    </div>
+                    <img src="res/c-pic-8.jpg" class=" c-pic" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="res/c-pic-6.jpg" class=" c-pic" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="res/c-pic-7.jpg" class=" c-pic" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="body-container">
+
+
+        <div class="body-box-1" id="b-b-1">
+            <div class="b-1-cont-1" id="b1-c1" >
+
+                <img class="b-1-img" id="b1-img" src="res/b-pic-2.jpg" alt="...">
+
+
+            </div>
+            <div class="b-1-cont-2" id="b1-c2">
+
+                <div class="b1-c2-head" id="b1-c2-h">
+                    OUR STORY
+                </div>
+
+                <div class="b1-c2-cont" id="b1-c2-c">
+                    At Royal Resort Indian Restaurant, we offer distinctive cuisine in an informal, friendly setting.
+                    Our restaurant enjoys a reputation for impeccable service, elegant Asian-style décor, and exquisite
+                    Indian food. Dining at our restaurant is like visiting India without leaving your hometown </div>
+
+            </div>
+        </div>
+
+        <div class="body-box-2" id="b-b-2">
+            <div class="b2-h">
+                CATERING FOR ALL OCCASIONS
+                <div></div>
+            </div>
+            <div class="b2-cont">
+                <div class="b2-c-1" id="b-b2-c1">
+
+                </div>
+                <div class="b2-c-2" id="b-b2-c2">
+                    
+                </div>
+                <div class="b2-c-3" id="b-b2-c3">
+                    
+                </div>
+            </div>
+            <div class="b2-foot">
+               <div class="b2-f-link"><a href="#" > KNOW MORE </a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-left col-md-4 col-sm-6">
+          <p class="about">
+            <span> About the company</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt,
+            ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+          </p>
+          <div class="icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-center col-md-4 col-sm-6">
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span> Street name and number</span> City, Country</p>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <p> (+00) 0000 000 000</p>
+          </div>
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> office@company.com</a></p>
+          </div>
+        </div>
+        <div class="footer-right col-md-4 col-sm-6">
+          <h2> ROYAL<span> RESORT</span></h2>
+          <p class="menu">
+            <a href="#"> Home</a> |
+            <a href="#"> Catering</a> |
+            <a href="#"> Gallery</a> |
+            <a href="#"> Services</a> |
+            <a href="#"> About Us</a> |
+            <a href="#"> Contact</a>
+          </p>
+          <p class="name"> Company Name &copy; 2016</p>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
